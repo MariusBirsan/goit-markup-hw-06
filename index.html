@@ -362,13 +362,35 @@
     <!--Modal window-->
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
+        <h3>Leave your information and we'll call you back</h3>
         <button class="close-btn" data-modal-close>
           <svg class="close-btn-svg">
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
         </button>
+        <form>
+          <label for="name">Name</label><br />
+          <input type="text" id="name" name="name" /><br />
+          <label for="phone">Telephone</label><br />
+          <input type="text" id="phone" name="phone" /><br />
+          <label for="email">E-mail</label><br />
+          <input type="text" id="email" name="email" /><br />
+          
+          <label for="comments">Comments</label><br />
+          <textarea
+            name="feedback"
+            rows="5"
+            placeholder="Enter the text"
+          ></textarea><br />
+          <input type="checkbox" id="terms" name="terms" value="terms">
+          <label for="vehicle1"> 
+            I agree with the letter and accept the <a href=""></a>
+          </label><br>
+          <input type="submit" value="Send" />
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <!--Modal window-->
   </body>
 </html>

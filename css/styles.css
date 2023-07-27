@@ -482,6 +482,10 @@ footer {
   transform: scale(1);
   transition-property: transform;
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .is-hidden {
@@ -516,6 +520,20 @@ footer {
 .close-btn-svg {
   height: 18px;
   width: 18px;
+}
+
+[type="text"] {
+  height: 44px;
+  width: 448px;
+  display: flex;
+}
+
+.modal-content h3{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
 }
 
 /*==========Portofolio styling==========*/
