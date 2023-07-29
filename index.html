@@ -357,6 +357,18 @@
           </a>
         </div>
       </div>
+      <div class="subscribe">
+        <h3>SUBSCRIBE FOR THE NEWSLATTER</h3>
+        <label class="subscribe-content" >
+          <input type="text" id="e-mail" name="e-mail" placeholder="E-mail"/>
+          <button type="submit">
+            Subscribe
+          <svg class="subscribe-btn-svg">
+            <use href="./images/icons.svg#icon-plane"></use>
+          </svg>
+          </button>
+        </label>
+      </div>
     </footer>
 
     <!--Modal window-->
@@ -371,28 +383,28 @@
         <form>
           <ul>
             <li>
-              <label for="name">Name</label><br />
-              <input type="text" id="name" name="name" id="input" /><br />
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" class="info"/>
               <svg class="modal-icons name" id="svg">
                 <use href="./images/icons.svg#icon-modal-name"></use>
               </svg>
             </li>
             <li>
-              <label for="phone">Telephone</label><br />
-              <input type="text" id="phone" name="phone" class="input" /><br />
+              <label for="phone">Telephone</label>
+              <input type="text" id="phone" name="phone" class="info"/>
               <svg class="modal-icons phone">
                 <use href="./images/icons.svg#icon-modal-phone"></use>
               </svg>
             </li>
             <li>
-              <label for="email">E-mail</label><br />
-              <input type="text" id="email" name="email" /><br />
+              <label for="email">E-mail</label>
+              <input type="text" id="email" name="email" class="info"/>
               <svg class="modal-icons email">
                 <use href="./images/icons.svg#icon-modal-email"></use>
               </svg>
             </li>
             <li>
-              <label for="comments">Comments</label><br />
+              <label for="comments">Comments</label>
               <textarea
                 name="feedback"
                 rows="5"
@@ -401,11 +413,11 @@
               ><br />
             </li>
             <li>
-              <input type="checkbox" id="terms" name="terms" value="terms"/>
-              <label for="terms">
-                I agree with the letter and accept the
-                <a href="">Terms and Conditions</a> </label
-              ><br />
+              <label class="conditions" >I agree with the letter and accept the
+                <a href="" class="conditions-link">Terms and Conditions</a>
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
             </li>
             <li><input type="submit" value="Send"/></li>
           </ul>          
@@ -414,8 +426,5 @@
     </div>
     <script src="./js/modal.js"></script>
     <!--Modal window-->
-
-    <div id="one" tabindex="1">One, Hover Me</div>
-    <div id="two">Two</div>
   </body>
 </html>
