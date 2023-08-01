@@ -13,16 +13,14 @@
   box-sizing: border-box;
 }
 
-body {
+.container {
   font-family: var(--text-font-family);
   font-weight: 700;
   color: var(--heading-color);
   background-color: var(--backround-text-color);
-}
-
-.container {
+  width: 1600px;
   display: block;
-  margin: 0 calc((100% - 1600px) / 2) 0;
+  margin: auto;
 }
 
 ul {
